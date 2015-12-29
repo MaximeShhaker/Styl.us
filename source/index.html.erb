@@ -1,10 +1,93 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Welcome to Stylus
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div id="banner" class="padded">
+  <h1>Styl.us</h1>
+  <p>
+    Turn your pen into you best friend
+    Make every line you write count..
+  </p>
+  <a href="#" class="btn btn-primary btn-lg">GET YOUR STYLUS</a>
+</div>
+
+
+<div class="bg-blue padded">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <%= image_tag "paper.png" %>
+          <h2>Natural writing</h2>
+          <p>
+            Don't change your habits, write with a pen on paper notebooks
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <%= image_tag "computer.png" %>
+          <h2>Sync. copy</h2>
+          <p>
+            Stylus instantaneously copy your text on your computer, in real-time
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <%= image_tag "pie-chart.png" %>
+          <h2>Analytics</h2>
+          <p>
+            Get feedbacks on the way you write, your favorite words, your frequent mistakes
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <%= image_tag "database.png" %>
+          <h2>Storing your texts</h2>
+          <p>
+            Everything line writen with your stylus is stored in the cloud, so that it's never lost
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="newsletter" class="text-center">
+  <h2>Get news from stylus</h2>
+  <p>
+    Leave us your mail and get stylus news
+  </p>
+  <form action="" class="form-inline">
+    <input type="email" class="form-control" placeholder="blabla@test.com">
+    <input type="submit" value="Subscribe" class="btn btn-primary">
+  </form>
+</div>
+
+
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#484848"}]},{"featureType":"administrative.locality","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text","stylers":[{"visibility":"on"},{"color":"#484848"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"labels.text","stylers":[{"color":"#948f8f"},{"visibility":"off"}]},{"featureType":"landscape","elementType":"labels.text.fill","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural.terrain","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#8ea2aa"},{"visibility":"on"}]},{"featureType":"water","elementType":"labels.text","stylers":[{"color":"#ffffff"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"},{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#484848"},{"saturation":"0"},{"visibility":"off"}]}] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
+

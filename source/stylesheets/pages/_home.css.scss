@@ -1,0 +1,16 @@
+#banner{
+  background-image: image-url("background-stylus.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:150px 50px;
+  color:#fff;
+  h1{
+    font-size: 50px;
+    color: $white;
+    font-family: $gotham;
+  }
+  p{
+    font-size:25px;
+    color: $white;
+  }
+}
