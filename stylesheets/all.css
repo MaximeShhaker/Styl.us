@@ -9282,7 +9282,7 @@ button.close {
  * ------------------------------------- */
 /* line 38, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/layout/_navbar.css.scss */
 .navbar-wagon {
-  background: white;
+  background: transparent;
   font-family: "Montserrat", "sans-serif";
   border: none;
   font-weight: 400;
@@ -9297,7 +9297,7 @@ button.close {
   .navbar-wagon .navbar-nav > li > a:focus,
   .navbar-wagon .navbar-nav > .open > a:focus {
     outline: none;
-    color: black;
+    color: #FFF;
     line-height: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -9315,7 +9315,7 @@ button.close {
   .navbar-wagon .navbar-brand,
   .navbar-wagon .navbar-brand:hover {
     outline: none;
-    color: black;
+    color: #FFF;
     padding-top: 5px;
     padding-bottom: 5px; }
   /* line 79, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/layout/_navbar.css.scss */
@@ -9377,7 +9377,7 @@ button.close {
   /* line 143, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-brand, .navbar-wagon .navbar-brand:hover {
     display: block;
-    color: black;
+    color: #FFF;
     padding-top: 0;
     padding-bottom: 0; } }
 /* -------------------------------------
