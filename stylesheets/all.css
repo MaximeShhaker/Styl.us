@@ -9437,6 +9437,17 @@ button.close {
     font-size: 25px;
     color: #FFF; }
 
+/* line 18, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/pages/_home.css.scss */
+.testimonial {
+  background: #FFF;
+  padding: 40px;
+  box-shadow: 1px 1px 3px #a6a6a6;
+  margin: 10px; }
+  /* line 23, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/pages/_home.css.scss */
+  .testimonial img {
+    width: 40%;
+    margin: 0 auto; }
+
 /*
 ==============================================
 CSS3 ANIMATION CHEAT SHEET
