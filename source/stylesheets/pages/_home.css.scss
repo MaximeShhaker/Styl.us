@@ -2,7 +2,7 @@
   background-image: image-url("background-stylus.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding:150px 50px;
+  padding:200px 50px;
   color:#fff;
   h1{
     font-size: 50px;
@@ -24,4 +24,22 @@
     width:40%;
     margin:0 auto;
   }
+}
+
+/* position of the down buttons on eauch section */
+#down-first-banner{
+  position:relative;
+  top:170px;
+}
+#down-second-banner {
+    position: relative;
+    top: 100px;
+}
+#down-third-banner {
+    position: relative;
+    top: 100px;
+}
+#down-fourth-banner {
+    position: relative;
+    top: 100px;
 }
