@@ -65,16 +65,30 @@
     </nav>
 
     <div id="banner" class="padded">
-  <h1>Styl.us</h1>
-  <p>
-    Turn your pen into you best friend
-    Make every line you write count..
-  </p>
-  <a href="#" class="btn btn-primary btn-lg">GET YOUR STYLUS</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="appearIn">
+          <h1>Styl.us</h1>
+          <p>
+            Turn your pen into you best friend
+            Make every line you write count..
+          </p>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#orderForm">
+            GET YOUR STYLUS
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center" id="down-first-banner">
+    <a href="#features">
+      <i class="fa fa-angle-down angle-down pulse"></i>
+    </a>
+  </div>
 </div>
 
-
-<div class="bg-blue padded">
+<div class="bg-blue padded" id="features">
   <div class="container text-center">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
@@ -115,6 +129,11 @@
       </div>
     </div>
   </div>
+  <div class="text-center" id="down-second-banner">
+    <a href="#newsletter">
+      <i class="fa fa-angle-down angle-down pulse"></i>
+    </a>
+  </div>
 </div>
 
 <div id="newsletter" class="text-center padded">
@@ -122,24 +141,29 @@
   <p>
     Leave us your mail and get stylus news
   </p>
-  <form action="" class="form-inline">
+  <form action="" class="form-inline bar">
     <input type="email" class="form-control" placeholder="blabla@test.com">
     <input type="submit" value="Subscribe" class="btn btn-primary">
   </form>
+  <div class="text-center" id="down-third-banner">
+    <a href="#testimonials">
+      <i class="fa fa-angle-down angle-down pulse"></i>
+    </a>
+  </div>
 </div>
 
 <div id="testimonials" class="padded">
   <div class="container">
     <div class="row">
               <div class="col-xs-12 col-sm-6 text-center">
-                <div class="testimonial">
+                <div class="testimonial slideUp">
                   <img class="img-circle" src="images/bill.jpg" />
                   <h3>Bill Gate</h3>
                   <p>Best invention since computer</p>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 text-center">
-                <div class="testimonial">
+                <div class="testimonial slideUp">
                   <img class="img-circle" src="images/paul.jpg" />
                   <h3>Paul Graham</h3>
                   <p>Big hit of the year</p>
@@ -147,7 +171,11 @@
               </div>
     </div>
   </div>
-
+  <div class="text-center" id="down-fourth-banner">
+    <a href="#map">
+      <i class="fa fa-angle-down angle-down pulse"></i>
+    </a>
+  </div>
 </div>
 
 <div id="map" style="width: 100%; height: 400px;"></div>
@@ -173,6 +201,56 @@ var marker = new google.maps.Marker({
 });
 </script>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Order your stylus</h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="firstname">Prénom</label>
+                <input type="text" class="form-control" placeholder="prénom" id="firstname">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="lastname">Nom</label>
+                <input type="text" class="form-control" placeholder="nom" id="lastname">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="bob@gmail.com" id="email">
+          </div>
+          <input type="submit" value="order" class="btn btn-primary btn-lg">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Scroll Reveal -->
+<script>
+  // Changing the defaults
+  window.sr = ScrollReveal({ reset: true });
+
+  // Customizing a reveal set
+  sr.reveal( '.card', {delay: 200, duration: 500 } );
+  sr.reveal( '#newsletter', {delay: 200, duration: 500 } );
+</script>
 
 
 
@@ -203,7 +281,5 @@ var marker = new google.maps.Marker({
         </div>
       </div>
     </div>
-
-
   </body>
 </html>

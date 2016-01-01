@@ -9247,6 +9247,28 @@ button.close {
 .fa-meanpath:before {
   content: ""; }
 
+@keyframes appearIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes appearIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes appearIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* line 26, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/layout/_animation.css.scss */
+.appearIn {
+  opacity: 0;
+  animation: appearIn 1s 0s ease forwards;
+  -webkit-animation: appearIn 1s 0s ease forwards;
+  -moz-animation: appearIn 1s 0s ease forwards; }
+
 /* line 1, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/layout/_footer.css.scss */
 #footer {
   background-color: #222222;
@@ -9420,12 +9442,17 @@ button.close {
   background: #6452BD;
   color: white; }
 
+/* line 1, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/components/_button.css.scss */
+.angle-down {
+  font-size: 90px;
+  color: #FFF; }
+
 /* line 1, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/pages/_home.css.scss */
 #banner {
   background-image: url("../images/background-stylus.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 150px 50px;
+  padding: 200px 50px;
   color: #fff; }
   /* line 7, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/pages/_home.css.scss */
   #banner h1 {
@@ -9447,6 +9474,27 @@ button.close {
   .testimonial img {
     width: 40%;
     margin: 0 auto; }
+
+/* position of the down buttons on eauch section */
+/* line 30, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/pages/_home.css.scss */
+#down-first-banner {
+  position: relative;
+  top: 170px; }
+
+/* line 34, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/pages/_home.css.scss */
+#down-second-banner {
+  position: relative;
+  top: 100px; }
+
+/* line 38, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/pages/_home.css.scss */
+#down-third-banner {
+  position: relative;
+  top: 100px; }
+
+/* line 42, /Users/maximelegoueff/Desktop/Formations/Le Wagon/Styl.us/source/stylesheets/pages/_home.css.scss */
+#down-fourth-banner {
+  position: relative;
+  top: 100px; }
 
 /*
 ==============================================
