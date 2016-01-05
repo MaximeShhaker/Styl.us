@@ -9,9 +9,9 @@ $(document).ready(function(){
   $(window).on('scroll', function(){
 
     if ( $(this).scrollTop() > 120 ){
-      $(".navbar").css("background-color", "black");
+      $(".navbar").addClass("scrolled-navbar");
     } else {
-      $(".navbar").css("background-color", "transparent");
+      $(".navbar").removeClass("scrolled-navbar");
     }
 
   });
